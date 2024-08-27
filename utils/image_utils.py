@@ -4,49 +4,49 @@ import numpy as np
 
 
 def load_image(img_path: str) -> np.ndarray:
-    """Charge une image avec open-cv."""
+    """Charge une image avec OpenCV."""
     image = cv2.imread(img_path)
     if image is None:
         print(f"Erreur : Impossible de charger l'image à partir de {img_path}.")
     return image
 
 def save_image(image: np.ndarray | cv2.VideoCapture, image_path: str = "image.png") -> None:
-    """Sauvegarde une image open-cv"""
+    """Sauvegarde une image OpenCV"""
     return cv2.imwrite(image_path, image)
 
 def convert_to_cv_image(image: np.ndarray) -> np.ndarray:
-    """Convertit une image en image open-cv."""
+    """Convertit une image en image OpenCV."""
     return cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
 
 def convert_to_np_image(image: np.ndarray) -> np.ndarray:
-    """Convertit une image en image open-cv."""
+    """Convertit une image en image OpenCV."""
     return cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
 def convert_to_grayscale(image: np.ndarray) -> np.ndarray:
-    """Convertit une image open-cv en niveaux de gris."""
+    """Convertit une image OpenCV en niveaux de gris."""
     return cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 def apply_threshold(image: np.ndarray, threshold_value: int = 128) -> np.ndarray:
-    """Applique un seuillage binaire à l'image open-cv."""
+    """Applique un seuillage binaire à l'image OpenCV."""
     _, thresh_image = cv2.threshold(image, threshold_value, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
     return thresh_image
 
 def apply_gaussian_blur(image: np.ndarray, kernel_size: tuple[int, int] = (5, 5)) -> np.ndarray:
-    """Applique un flou gaussien à l'image open-cv."""
+    """Applique un flou gaussien à l'image OpenCV."""
     return cv2.GaussianBlur(image, kernel_size, 0)
 
 def apply_edge_detection(image: np.ndarray) -> np.ndarray:
-    """Applique un filtre de détection des contours à l'image open-cv."""
+    """Applique un filtre de détection des contours à l'image OpenCV."""
     return cv2.Canny(image, 100, 200)
 
 def adjust_gamma(image: np.ndarray, gamma: float = 1.0) -> np.ndarray:
-    """Applique une correction gamma à l'image open-cv."""
+    """Applique une correction gamma à l'image OpenCV."""
     invGamma = 1.0 / gamma
     table = np.array([(i / 255.0) ** invGamma * 255 for i in np.arange(0, 256)]).astype("uint8")
     return cv2.LUT(image, table)
 
 def deskew_image(image: np.ndarray) -> np.ndarray:
-    """Détection Automatique et Redressement d'une image open-cv."""
+    """Détection Automatique et Redressement d'une image OpenCV."""
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     coords = np.column_stack(np.where(gray > 0))
     angle = cv2.minAreaRect(coords)[-1]
