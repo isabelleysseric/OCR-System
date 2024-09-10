@@ -1,8 +1,26 @@
 <h1 align="center">Optical Character Recognition (OCR) System</h1>
 
 ![OCR System interface image](data/api/OCR-System.png)
-<br>
-<br>
+
+<h2 align="center">    
+
+  <!-- GitHub -->
+  <a href="https://github.com/isabelleysseric/">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" >
+  </a>  
+
+  <!-- Project Repo -->
+  <a href="https://github.com/isabelleysseric/ProductsApiRestProject/">
+    <img src="https://img.shields.io/badge/Repo-ProductsApiRestProject-green?style=for-the-badge&logo={ProductsApiRestProject}&logoColor=white" >
+  </a>
+
+  <!-- Wiki Project -->
+  <a href="https://github.com/isabelleysseric/ProductsApiRestProject/wiki/">
+    <img src="https://img.shields.io/badge/Wiki-ProductsApiRestProject-green?style=for-the-badge&logo={ProductsApiRestProject}&logoColor=white" >
+  </a><br>
+  
+</h2>
+<br/>
 
 ## Author
 [Isabelle Eysseric](https://github.com/isabelleysseric)
