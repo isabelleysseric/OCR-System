@@ -1,4 +1,4 @@
-<h1 align="center">OCR System</h1>h1
+<h1 align="center">OCR System</h1>
 
 ![OCR System interface image](data/api/OCR-System.png)
 
