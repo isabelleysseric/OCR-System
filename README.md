@@ -10,13 +10,13 @@
   </a>  
 
   <!-- Project Repo -->
-  <a href="https://github.com/isabelleysseric/ProductsApiRestProject/">
-    <img src="https://img.shields.io/badge/Repo-ProductsApiRestProject-green?style=for-the-badge&logo={ProductsApiRestProject}&logoColor=white" >
+  <a href="https://github.com/isabelleysseric/OCR-System/">
+    <img src="https://img.shields.io/badge/Repo-OCR_System-green?style=for-the-badge&logo={OCR-System}&logoColor=white" >
   </a>
 
   <!-- Wiki Project -->
-  <a href="https://github.com/isabelleysseric/ProductsApiRestProject/wiki/">
-    <img src="https://img.shields.io/badge/Wiki-ProductsApiRestProject-green?style=for-the-badge&logo={ProductsApiRestProject}&logoColor=white" >
+  <a href="https://github.com/isabelleysseric/OCR-System/wiki/">
+    <img src="https://img.shields.io/badge/Wiki-OCR_System-green?style=for-the-badge&logo={OCR-System}&logoColor=white" >
   </a><br>
   
 </h2>
