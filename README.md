@@ -1,6 +1,6 @@
 # OCR System
 
-![User interface image](https://github.com/isabelleysseric/OCR-System/blob/master/data/api/OCR-System.png)
+![User interface image](data/api/OCR-System.png)
 
 <p align='center'>
   <a href="https://github.com/isabelleysseric/OCR-System">OCR-System</a> (GitHub)
