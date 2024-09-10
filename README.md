@@ -2,6 +2,17 @@
 
 ![User interface image](https://github.com/isabelleysseric/OCR-System/blob/master/data/api/OCR-System.png)
 
+<p align='center'>
+  <a href="https://github.com/isabelleysseric/OCR-System">OCR-System</a> (GitHub)
+  &nbsp; • &nbsp;<a href="https://github.com/isabelleysseric/OCR-System/wiki">OCR-System</a> (Wiki)<br/>
+  <a href="https://github.com/isabelleysseric">isabelleysseric</a> (GitHub)
+  &nbsp; • &nbsp;<a href="https://isabelleysseric.com/">isabelleysseric.com</a> (Portfolio)
+  &nbsp; • &nbsp;<a href="https://isabelleysseric.ai/">isabelleysseric.ai</a> (Projects)
+  &nbsp; • &nbsp;<a href="https://www.linkedin.com/in/isabelle-eysseric/">isabelle-eysseric</a> (LinkedIn) <br/>
+</p>
+<br/>
+<br/>
+
 ## Project Description
 
 OCR System is a Python application that allows you to extract text from PDF documents, uploaded images or images captured via a webcam. The application uses the Tesseract OCR library to recognize and extract text from images or PDF pages.
