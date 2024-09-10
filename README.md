@@ -1,8 +1,8 @@
-# OCR System
+<h1 align="center">OCR System</h1>h1
 
-![User interface image](data/api/OCR-System.png)
+![OCR System interface image](data/api/OCR-System.png)
 
-<p align='center'>
+<p align="center">
   <a href="https://github.com/isabelleysseric/OCR-System">OCR-System</a> (GitHub)
   &nbsp; • &nbsp;<a href="https://github.com/isabelleysseric/OCR-System/wiki">OCR-System</a> (Wiki)<br/>
   <a href="https://github.com/isabelleysseric">isabelleysseric</a> (GitHub)
@@ -12,6 +12,13 @@
 </p>
 <br/>
 <br/>
+
+
+## Author
+[Isabelle Eysseric](https://github.com/isabelleysseric)
+<br/>
+<br/>
+
 
 ## Project Description
 
