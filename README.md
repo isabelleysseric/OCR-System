@@ -1,22 +1,24 @@
 # OCR System
 
-## Description du projet
+## Project Description
 
-OCR System est une application Python qui permet d'extraire du texte à partir de documents PDF, d'images chargées ou d'images capturées via une webcam. L'application utilise la bibliothèque Tesseract OCR pour reconnaître et extraire du texte à partir d'images ou de pages PDF.
+OCR System is a Python application that allows you to extract text from PDF documents, uploaded images or images captured via a webcam. The application uses the Tesseract OCR library to recognize and extract text from images or PDF pages.
 
-## Fonctionnalités
 
-- **Charger un PDF** : Charge un fichier PDF et extrait le texte de chaque page.
-- **Charger une Image** : Charge une image à partir du système de fichiers et extrait le texte.
-- **Capturer une Image** : Capture une image via une webcam et extrait le texte.
-- **Extraire le texte** : Sauvegarde le texte extrait dans un fichier `.txt`, incluant des informations sur la source (PDF, image chargée, image capturée).
+## Features
 
-## Prérequis
+- **Load PDF**: Loads a PDF file and extracts the text from each page.
+- **Load Image**: Loads an image from the file system and extracts the text.
+- **Capture Image**: Captures an image via a webcam and extracts the text.
+- **Extract Text**: Saves the extracted text to a `.txt` file, including information about the source (PDF, uploaded image, captured image).
 
-Avant d'utiliser l'application, assurez-vous d'avoir installé les dépendances suivantes :
+
+## Prerequisites
+
+Before using the application, make sure you have installed the following dependencies:
 
 - Python 3.7+
-- Tkinter (inclus avec Python standard)
+- Tkinter (included with standard Python)
 - OpenCV (`cv2`)
 - NumPy
 - Pillow (`PIL`)
@@ -25,58 +27,134 @@ Avant d'utiliser l'application, assurez-vous d'avoir installé les dépendances 
 - PDF2Image
 - PyTesseract
 
-### Installation de Tesseract-OCR
 
-1. Téléchargez et installez Tesseract-OCR depuis [le site officiel](https://github.com/tesseract-ocr/tesseract).
-2. Ajoutez Tesseract à votre PATH ou spécifiez le chemin vers `tesseract.exe` dans le script Python.
+### Installing Tesseract-OCR
 
-### Installation des dépendances Python
+1. Download and install Tesseract-OCR from [the official website](https://github.com/tesseract-ocr/tesseract).
+2. Add Tesseract to your PATH or specify the path to `tesseract.exe` in the Python script.
 
-Vous pouvez installer les dépendances Python nécessaires en exécutant :
+
+### Installing Python Dependencies
+
+You can install the required Python dependencies by running:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Utilisation
 
-Pour démarrer l'application, exécutez le script principal :
+## Usage
+
+To start the application, run the main script:
 
 ```bash
 python gui.py
 ```
 
-### Interface utilisateur
 
-* **Charger un PDF** : Ouvrez un fichier PDF, convertissez chaque page en image, puis extrayez le texte.
-* **Charger une Image** : Chargez une image depuis votre système de fichiers pour en extraire le texte.
-* **Capturer une Image** : Utilisez votre webcam pour capturer une image et extraire le texte.
-* **Analyser l'Image** : Appliquez un prétraitement pour améliorer la reconnaissance de texte.
-* **Extraire le Texte** : Extrait le texte de la source sélectionnée (PDF, image chargée ou image capturée) et enregistre le texte extrait dans un fichier `.txt`.
+### User Interface
 
-### Sauvegarde des résultats
+* **Load PDF**: Open a PDF file, convert each page to an image, and then extract the text.
+* **Load Image**: Load an image from your file system to extract the text.
+* **Capture Image**: Use your webcam to capture an image and extract the text.
+* **Analyze Image**: Apply preprocessing to improve text recognition.
+* **Extract Text**: Extract text from the selected source (PDF, loaded image, or captured image) and save the extracted text to a `.txt` file.
 
-Lors de l'extraction de texte, un fichier `.txt` est généré, incluant des informations sur la source du texte :
 
-* `captured_image_extracted_text.txt` : Texte extrait d'une image capturée via webcam.
-* `loaded_image_extracted_text.txt` : Texte extrait d'une image chargée.
-* `loaded_pdf_extracted_text.txt` : Texte extrait d'un fichier PDF chargé.
+### Saving results
 
-## Problèmes courants
+When extracting text, a `.txt` file is generated, including information about the source of the text:
 
-### Erreur `TesseractNotFoundError`
+* `captured_image_extracted_text.txt`: Text extracted from an image captured via webcam.
+* `loaded_image_extracted_text.txt`: Text extracted from an uploaded image.
+* `loaded_pdf_extracted_text.txt`: Text extracted from an uploaded PDF file.
 
-* Assurez-vous que Tesseract-OCR est installé et que le chemin vers `tesseract.exe` est correctement configuré dans le script Python.
 
-### Aucune extraction de texte
+## # OCR System
 
-* Vérifiez que l'image ou le PDF chargé contient bien du texte reconnaissable. Essayez d'améliorer la qualité de l'image ou d'utiliser une résolution plus élevée.
+## Project Description
+
+OCR System is a Python application that allows you to extract text from PDF documents, uploaded images or images captured via a webcam. The application uses the Tesseract OCR library to recognize and extract text from images or PDF pages.
+
+## Features
+
+- **Load PDF**: Loads a PDF file and extracts the text from each page.
+- **Load Image**: Loads an image from the file system and extracts the text.
+- **Capture Image**: Captures an image via a webcam and extracts the text.
+- **Extract Text**: Saves the extracted text to a `.txt` file, including information about the source (PDF, uploaded image, captured image).
+
+## Prerequisites
+
+Before using the application, make sure you have installed the following dependencies:
+
+- Python 3.7+
+- Tkinter (included with standard Python)
+- OpenCV (`cv2`)
+- NumPy
+- Pillow (`PIL`)
+- Tesseract-OCR
+- PyMuPDF (`fitz`)
+- PDF2Image
+- PyTesseract
+
+### Installing Tesseract-OCR
+
+1. Download and install Tesseract-OCR from [the official website](https://github.com/tesseract-ocr/tesseract).
+2. Add Tesseract to your PATH or specify the path to `tesseract.exe` in the Python script.
+
+### Installing Python Dependencies
+
+You can install the required Python dependencies by running:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+To start the application, run the main script:
+
+```bash
+python gui.py
+```
+
+### User Interface
+
+* **Load PDF**: Open a PDF file, convert each page to an image, and then extract the text.
+* **Load Image**: Load an image from your file system to extract the text.
+* **Capture Image**: Use your webcam to capture an image and extract the text.
+* **Analyze Image**: Apply preprocessing to improve text recognition.
+* **Extract Text**: Extract text from the selected source (PDF, loaded image, or captured image) and save the extracted text to a `.txt` file.
+
+### Saving results
+
+When extracting text, a `.txt` file is generated, including information about the source of the text:
+
+* `captured_image_extracted_text.txt`: Text extracted from an image captured via webcam.
+* `loaded_image_extracted_text.txt`: Text extracted from an uploaded image.
+* `loaded_pdf_extracted_text.txt`: Text extracted from an uploaded PDF file.
+
+
+## Common issues
+
+
+### `TesseractNotFoundError`
+
+* Make sure Tesseract-OCR is installed and the path to `tesseract.exe` is set correctly in the Python script.
+
+
+### No text extraction
+
+* Make sure the uploaded image or PDF contains recognizable text. Try improving the image quality or using a higher resolution.
+
 
 ## Contribution
 
-Les contributions sont les bienvenues ! Si vous avez des idées d'amélioration, n'hésitez pas à soumettre une pull request ou à ouvrir une issue.
+Contributions are welcome! If you have any ideas for improvement, feel free to submit a pull request or open an issue.
 
-## Licence
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE]() pour plus d'informations.
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/isabelleysseric/OCR-System/blob/master/LICENSE) file for more information.
+
 
